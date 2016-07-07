@@ -1,7 +1,2 @@
-To get started you need to make sure you have 512MB of RAM free and 5GB available on  your hard drive. Next, download an Ubuntu Iso from http://www.ubuntu.com/download/desktop and
-download VirtualBox at  https://www.virtualbox.org/wiki/Downloads.Once VirtualBox is installed, start it up and hit the New button. This starts the process of creating a new virtual machine.
-We are going to install Ubuntu on this new virtual machine. Name your new machine Ubuntu-Machine. Set the type to Linux and the version to Ubuntu 64 bit. Use the recommended memory size and hit continue.
-Select Create a virtual hard disk now and press create. On the next menu, leave VDI selected and continue. Select dynamically allocated under the options for Storage on physical hard disk.
-On the next screen, allocate 5 GB to your new virtual machine. You should see a new virtual machine called Ubuntu-Machine in the left column of the VirtualBox program. Select the virtual machine, an
-click the green start button, and select normal start. Click the folder icon, and find the location where you downloaded your Ubuntu iso, select it and click Start. That’s all there is to it,
-you now have a virtual machine running Ubuntu you can use to follow along with the examples.
+Follow the instructions here to setup your
+virtual machine:http://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox
