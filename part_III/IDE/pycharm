@@ -1,0 +1,61 @@
+# add windows shortcuts
+
+
+#jump to a definition
+mac
+command-b
+
+windows
+
+
+#jump to a line
+
+
+
+#debugging
+One of the most important things you will do from your IDE is debugging. In this section I will go over some of the basics of debugging. Here is the code we will be debugging in this section:
+print “Hello World”
+
+x = 100
+
+buildObject()
+
+print “Hello!”
+
+Debugging starts with setting a breakpoint on a specific line of your code. A breakpoint freezes the state of the program at the line of code you set your breakpoint at. Once you set your breakpoint,
+you run your debugger, and your program will stop execution at that breakpoint. Once your debugger stops at your breakpoint, you can start debugging.
+You have access to all of the code that executed before your breakpoint. If we set a breakpoint at line 3 in our example and run our debugger, we could use our debugger to check the value of x to make
+ sure it’s the value we expect it to be.
+A debugger generally has the options, step over, step into, and step out. These are used for stepping through programs. Stepping through a program means starting at the breakpoint you set, and moving
+ line by line through the program. In our example, step over will stop execution at every line of the program. Step into will behave the same except for one difference. If there is a line with code defined
+  somewhere else, it will jump to that code. In our example above, if we set a breakpoint at line 1 and step through the program using step into, the debugger will jump to the definition of buildObject on
+   line 3. When you step into a function definition like buildObject, you can return back to your original starting place with step out.
+Debugging Example
+Lets use Google DevTools to debug an actual program. Copy and paste the following code into a file called self_taught.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<meta charset="UTF-8">
+   	<title>The Self-taught Programmer</title>
+</head>
+<body>
+<script>
+  function middle(){
+       	console.log("Middle!")
+   }
+   console.log("Beginning");
+   middle();
+   console.log("End")
+</script>
+</body>
+</html>
+
+Open the file in your browser. In your browser, on the page you opened, click “control” and in the popup menu click “Inspect”. Click on the “Sources” tab. On the very most left left side, find and
+click on the file self_taught.html. Once you click on it, you will see our html file in the middle column. You will also notice each line of code is numbered. Click directly on the number 12. This is
+how we set a breakpoint. A blue box should appear around the number.
+	Now we are ready to step through the file. Press refresh on your browser, and the program execution will stop at line 12. The very rightmost column contains the buttons to step through our code.
+	Look for three buttons with arrows in them. Drag your mouse over each to see their names. Click on “Step over next function call” to move to line 13. Keep pressing it to move all the way through
+	the program.
+	Refresh the page again. Step over one time. Now press the button “Step into next function call”. This takes us into our function called middle. Find the button “Step out of current function” and
+	 press it. That jumped us out of the middle function and to the next line in the program.’

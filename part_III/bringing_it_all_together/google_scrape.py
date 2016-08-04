@@ -1,14 +1,18 @@
 import urllib2
 from bs4 import BeautifulSoup
 
-response = urllib2.urlopen('https://news.google.com/')
-html = response.read()
-soup = BeautifulSoup(html, 'html.parser')
 
-print soup.title
+class Scraper:
+    def __init__(self, site):
+        self.site = site
 
-a = soup.find_all('a')
-for tag in soup.find_all('a'):
-    link_title = tag.get('href')
-    if link_title and 'html' in link_title:
-        print('\n' + tag.get('href'))
+    def scrape(self):
+        response = urllib2.urlopen(self.site)
+        html = response.read()
+        soup = BeautifulSoup(html, 'html.parser')
+        for tag in soup.find_all('a'):
+            url = tag.get('href')
+            if url and 'html' in url:
+                print("\n" + url)
+
+Scraper().scrape('https://news.google.com/')

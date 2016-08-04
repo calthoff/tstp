@@ -2,7 +2,7 @@ import re
 
 line = "Match this."
 
-matchObj = re.search('this', line)
+matchObj = re.findall('this', line)
 
 if matchObj:
     print(matchObj.group())
