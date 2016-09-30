@@ -4,25 +4,32 @@ from random import shuffle
 class Card:
     suits = ["spades", "hearts", "diamonds", "clubs"]
     values = [None, None,"2", "3", "4", "5", "6", "7", "8", "9",
-             "10", "Jack", "Queen", "King", "Ace"]
+              "10", "Jack", "Queen", "King", "Ace"]
 
     def __init__(self, value, suit):
+        """suit and value should be integers"""
         self.value = value
         self.suit = suit
 
     def __lt__(self, other):
         if self.value < other.value:
             return True
+        if self.value == other.value:
+            if self.suit < other.suit:
+                return True
+            else:
+                return False
         return False
 
     def __gt__(self, other):
         if self.value > other.value:
             return True
+        if self.value == other.value:
+            if self.suit > other.suit:
+                return True
+            else:
+                return False
         return False
-
-    def __eq__(self, other):
-        if self.value == other:
-            return True
 
     def __repr__(self):
         return self.values[self.value] + " of " + self.suits[self.suit]
@@ -62,7 +69,7 @@ class Game:
         print("beginning War!")
         response = None
         while len(cards) >= 2 and response != 'q':
-            response = input('Press q to quit. Press any other key to draw cards')
+            response = input('q to quit. Any other key to play.')
             player1_card = self.deck.remove_card()
             player2_card = self.deck.remove_card()
             print("{} drew {} {} drew {}".format(self.player1.name, player1_card, self.player2.name, player2_card))
@@ -74,8 +81,7 @@ class Game:
                 print("{} wins this round".format(self.player2.name))
         print("The War is over.{} wins".format(self.winner(self.player1, self.player2)))
 
-    @staticmethod
-    def winner(player1, player2):
+    def winner(self, player1, player2):
         if player1.wins > player2.wins:
             return player1.name
         if player1.wins < player2.wins:

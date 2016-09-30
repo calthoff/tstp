@@ -1,11 +1,6 @@
-nationality = "Indonesia"
-if nationality == "America":
-    print("Hello America!")
-elif nationality == "Canada":
-    print("Hello Canada!")
-elif nationality == "Thailand":
-    print("Hello Thailand!")
-elif nationality == "Mexico":
-    print("Hello Mexico!")
-else:
-    print("Hello world!")
+x = 10
+y = 11
+
+if x == 10:
+    if y == 11:
+        print(x + y)

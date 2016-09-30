@@ -1,5 +1,5 @@
-nationality = "Canada"
-if nationality == "America":
-    print("Hello America!")
-if nationality == "Canada":
-    print("Hello Canada!")
+country = "Canada"
+if country == "America":
+    print("Hello, America!")
+else:
+    print("Hello, Canada!")

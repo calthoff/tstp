@@ -1,4 +1,6 @@
 class Orange:
+    print("Orange created!")
+
     def __init__(self):
         self.weight = 6
         self.color = 'orange'

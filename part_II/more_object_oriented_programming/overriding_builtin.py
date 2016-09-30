@@ -8,3 +8,5 @@ class Person:
 
 joe = Person('Joe', 32)
 print(joe)
+
+print("Hello, World!")
