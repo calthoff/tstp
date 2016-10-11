@@ -3,4 +3,4 @@ age = int(age)
 if age < 21:
     print("You are young!")
 else:
-    print("Wow you are old!")
+    print("Wow, you are old!")
