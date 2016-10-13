@@ -8,4 +8,4 @@ elif country == "Thailand":
 elif country == "Mexico":
     print("Hello, Mexico!")
 else:
-    print("Hello, world!")
+    print("Hello, World!")
