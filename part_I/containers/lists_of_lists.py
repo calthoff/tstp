@@ -1,3 +1,5 @@
+# ex1
+
 list_of_lists = []
 rappers = ["Kanye West", "Jay Z", "Eminem", "Nas"]
 rockers = ["Bob Dylan", "The Beatles", "Led Zeppelin"]
@@ -16,3 +18,9 @@ rappers = list_of_lists[0]
 rappers.append("Kendrick Lamar")
 print(rappers)
 print(list_of_lists)
+
+rappers = list_of_lists[0]
+print(rappers)
+
+rappers = list_of_lists[0]
+rappers.append("Kendrick Lamar")

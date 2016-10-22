@@ -1,21 +1,8 @@
-number = input("type a number")
-number = int(number)
+def f(x=10):
+    if x == 10:
+        print("x is ten")
+    else:
+        print("x is not ten")
 
-if number % 2 == 0:
-    print("The number is even.")
-else:
-    print("The number is odd.")
-
-number = input("type a number")
-number = int(number)
-if number % 2 == 0:
-    print("The number is even.")
-else:
-    print("The number is odd.")
-
-number = input("type a number")
-number = int(number)
-if number % 2 == 0:
-    print("The number is even.")
-else:
-    print("The number is odd.")
+f()
+f(2)
