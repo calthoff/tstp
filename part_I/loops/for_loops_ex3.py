@@ -1,3 +1,3 @@
-my_list = ["a", "b", "c"]
-for character in my_list:
-    print character
+intense_shows = ["Game of Thrones", "Narcos", "Vice"]
+for show in intense_shows:
+    print(show)

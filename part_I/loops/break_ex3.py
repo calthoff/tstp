@@ -1,5 +1,3 @@
-# If you ar unfamiliar with the reference in this example, go watch Monty Python and the Holy Grail!
-
 questions = ["What is your name?", "What is your favorite color?", "What is your quest?"]
 n = 0
 while True:

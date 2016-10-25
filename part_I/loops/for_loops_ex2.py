@@ -1,3 +1,4 @@
-my_string = "Python"
-for character in my_string:
-    print character
+name = "Ted"
+for character in name:
+    print(character)
+
