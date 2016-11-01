@@ -1,6 +1,6 @@
 
 def hangman():
-    word = "caat"
+    word = "cat"
     wrong_guesses = 0
     stages = ["", "________      ", "|      |      ", "|      0      ", "|     /|\     ", "|     / \     ", "|             "]
     letters_left = list(word)

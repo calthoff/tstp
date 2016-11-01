@@ -5,6 +5,5 @@ while True:
     answer = input(questions[n])
     if answer == "q":
         break
-    n += 1
-    if n > 2:
-        n = 0
+    n = (n + 1) % 3
+    print(n)
