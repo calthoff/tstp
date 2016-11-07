@@ -1,5 +1,10 @@
+import random
 
-def hangman(word):
+
+def hangman():
+    word_list = ["Python", "Java", "computer", "hacker", "painter"]
+    random_number = random.randint(0, 4)
+    word = word_list[random_number]
     wrong_guesses = 0
     stages = ["", "________      ", "|      |      ", "|      0      ", "|     /|\     ", "|     / \     ", "|"]
     remaining_letters = list(word)
@@ -26,4 +31,4 @@ def hangman(word):
         print('\n'.join(stages[0: wrong_guesses]))
         print('You lose! The words was {}'.format(word))
 
-hangman("cat")
+hangman()
