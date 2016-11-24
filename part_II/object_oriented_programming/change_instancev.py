@@ -6,7 +6,10 @@ class Orange:
         self.weight = 10
 
     def print_orange(self):
-        print(self)
+        print(self.color)
+        print(self.weight)
+        self.color = "dark orange"
+        self.weight = 20
         print(self.color)
         print(self.weight)
 

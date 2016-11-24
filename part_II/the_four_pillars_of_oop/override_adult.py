@@ -12,13 +12,12 @@ class Adult():
 
 class Kid(Adult):
     def print_cartoon(self, favorite_cartoon):
-        print("{}'s favorite cartoon is {}".format(self.name, favorite_cartoon))
+        print("{}'s favorite cartoon is {}".format(self.name,
+              favorite_cartoon))
 
+    def print_name(self):
+        print("Method override!")
 
 child = Kid("Lauren", 3, 50, "blue")
-print(child.name)
-print(child.height)
-print(child.weight)
-print(child.eye_color)
 child.print_name()
-child.print_cartoon('DuckTales')
+

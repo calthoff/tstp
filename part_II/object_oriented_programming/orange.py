@@ -1,9 +1,11 @@
 class Orange:
-    print("Orange created!")
-    self.color = "orange"
-
-    def print_orange(self):
-        print(self)
+    def __init__(self):
+        print("Orange object created!")
+        self.weight = 6
+        self.color = 'orange'
 
 orange = Orange()
-orange.print_orange()
+print(orange.weight)
+print(orange.color)
+print(orange)
+print(type(orange))

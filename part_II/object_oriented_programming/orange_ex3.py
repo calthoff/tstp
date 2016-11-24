@@ -1,21 +1,12 @@
 class Orange:
-    def __init__(self, weight, color, mold):
-        """all weights are in oz"""
+    def __init__(self, weight, color):
         self.weight = weight
         self.color = color
-        self.mold = mold
-
-    def rot(self, days, temperature):
-        self.mold = days * (temperature * .1)
+        print("Orange object created!")
 
 
-orange = Orange(10, 'orange', 2)
-print(orange.weight)
-print(orange.color)
-print(orange.mold)
+an_orange = Orange(10, "dark orange")
 
-orange.weight = 100
-print(orange.weight)
 
-orange.rot(50, 100)
-print(orange.mold)
+print(an_orange.weight)
+print(an_orange.color)

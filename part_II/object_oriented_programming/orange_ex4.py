@@ -5,5 +5,9 @@ class Orange:
         print("Orange object created!")
 
 an_orange = Orange(10, "dark orange")
-print(type(an_orange))
-print(an_orange)
+
+an_orange.weight = 100
+an_orange.color = "light orange"
+
+print(an_orange.weight)
+print(an_orange.color)

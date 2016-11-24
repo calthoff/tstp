@@ -1,8 +1,7 @@
 my_list = list()
 
 with open("my_file.txt", "r") as my_file:
-    for line in my_file.read():
-        my_list.append(line)
+        my_list.append(my_file.read())
 
 
 print(my_list)

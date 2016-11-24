@@ -4,6 +4,6 @@ class Orange:
         self.color = color
         print("Orange object created!")
 
-an_orange = Orange(10, "dark orange")
-print(type(an_orange))
-print(an_orange)
+orange1 = Orange(4, "light orange")
+orange2 = Orange(8, "dark orange")
+orange3 = Orange(14, "yellow")
