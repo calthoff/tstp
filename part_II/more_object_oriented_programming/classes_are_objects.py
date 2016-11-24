@@ -1,4 +1,5 @@
-class Pterodactyl:
+class Square:
     pass
 
-print(Pterodactyl)
+
+print(Square)
