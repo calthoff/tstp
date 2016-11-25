@@ -6,7 +6,7 @@ class Shape():
 class Square(Shape):
     def print(self):
         super().print()
-        print("Specifically I am a square.")
+        print("Specifically, I am a square.")
 
 square = Square()
 square.print()
