@@ -6,7 +6,7 @@ class Data:
         self.numbers[index] = n
 
 data_one = Data()
-data_one[0] = 100
+data_one.numbers[0] = 100
 print(data_one.numbers)
 
 data_two = Data()
