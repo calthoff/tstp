@@ -10,4 +10,5 @@ class Person:
         self.name = name
 
 mick = Person('Mick Jagger')
-dog = Dog('Stanley','French Bulldog', 'mick')
+dog = Dog('Stanley','French Bulldog', mick)
+print(dog.owner.name)
