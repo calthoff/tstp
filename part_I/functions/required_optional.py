@@ -1,5 +1,6 @@
-try:
-    10 / 0
-    c = "I will never get defined"
-except ZeroDivisionError:
-    print(c)
+def required_optional(x, y=10):
+    return x + y
+
+
+result = required_optional(2)
+print(result)
