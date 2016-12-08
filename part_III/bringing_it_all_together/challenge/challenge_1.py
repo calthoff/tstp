@@ -10,9 +10,11 @@ class Scraper:
         response = urllib.request.urlopen(self.site)
         html = response.read()
         soup = BeautifulSoup(html, 'html.parser')
-        for tag in soup.find_all('a'):
-            url = tag.get('href')
-            if url and 'html' in url:
-                print("\n" + url)
+        with open("output.txt", "w") as f:
+            for tag in soup.find_all('a'):
+                url = tag.get('href')
+                if url and 'html' in url:
+                    print("\n" + url)
+                    f.write(url + "\n")
 
 Scraper('https://news.google.com/').scrape()

@@ -1,3 +1,3 @@
-from hello import print_hello
+import hello
 
-print_hello()
+hello.print_hello()
