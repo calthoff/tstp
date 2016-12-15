@@ -9,10 +9,10 @@ class Scraper:
     def scrape(self):
         response = urllib.request.urlopen(self.site)
         html = response.read()
-        soup = BeautifulSoup(html, 'html.parser')
-        for tag in soup.find_all('a'):
-            url = tag.get('href')
-            if url and 'html' in url:
+        soup = BeautifulSoup(html, "html.parser")
+        for tag in soup.find_all("a"):
+            url = tag.get("href")
+            if url and "html" in url:
                 print("\n" + url)
 
 Scraper('https://news.google.com/').scrape()

@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Give yourself permission to execute this file with chmod +x then run the file with ./challenge5.sh (or the name of your file)
-cd /Users/calthoff/PyCharmprojects
+cd ~
 ls *.py
 echo Bash script complete

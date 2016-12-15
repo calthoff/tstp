@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
+#!/bin/bash
 cat my_file.txt

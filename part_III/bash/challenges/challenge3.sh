@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
-cd /Users/calthoff/PyCharmprojects
+#!/bin/bash
+cd ~
 ls *.py

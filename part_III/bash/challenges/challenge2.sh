@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # add the next line to your .profile file.
-export python_projects=/Users/calthoff/PyCharmprojects
+export python_projects=~
 cd $python_projects
