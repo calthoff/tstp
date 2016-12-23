@@ -1,6 +1,6 @@
 my_list = list()
 
-with open("my_file.txt", "r") as my_file:
+with open("self_taught.txt", "r") as my_file:
         my_list.append(my_file.read())
 
 

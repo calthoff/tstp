@@ -1,5 +1,5 @@
-def required_optional(x, y=10):
+def add_it(x, y=10):
     return x + y
 
-result = required_optional(2)
+result = add_it(2)
 print(result)

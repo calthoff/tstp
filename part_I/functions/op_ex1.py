@@ -1,8 +1,6 @@
-def f(x=10):
-    if x == 10:
-        print("x is ten")
-    else:
-        print("x is not ten")
+def f(x=2):
+    return x**x
 
-f()
-f(2)
+
+print(f())
+print(f(4))

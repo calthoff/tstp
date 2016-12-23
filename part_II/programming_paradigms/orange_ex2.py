@@ -5,5 +5,4 @@ class Orange:
         print("Orange object created!")
 
 an_orange = Orange(10, "dark orange")
-print(type(an_orange))
 print(an_orange)

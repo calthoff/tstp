@@ -68,8 +68,10 @@ class Game:
         cards = self.deck.cards
         print("beginning War!")
         response = None
-        while len(cards) >= 2 and response != 'q':
+        while len(cards) >= 2:
             response = input('q to quit. Any other key to play.')
+            if response == 'q':
+                break
             player1_card = self.deck.remove_card()
             player2_card = self.deck.remove_card()
             print("{} drew {} {} drew {}".format(self.player1.name, player1_card, self.player2.name, player2_card))

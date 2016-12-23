@@ -15,7 +15,7 @@ def mad_libs(mls):
     be inside hint e.g., no __hint_hint__ only __hint__.
     """
     hints = re.findall("__.*?__", mls)
-    if hints:
+    if hints is not None:
         for word in hints:
             new_word = input("enter a {}".format(word))
             mls = mls.replace(word, new_word, 1)
