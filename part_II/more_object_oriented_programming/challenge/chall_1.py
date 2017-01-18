@@ -3,22 +3,12 @@ class Shape():
         print("I am a shape.")
 
 
-class Rectangle(Shape):
-    def __init__(self, width, length):
-        self.width = width
-        self.length = length
-
-    def calculate_perimeter(self):
-        return self.width * 2 + self.length * 2
-
-    def what_am_i(self):
-        super().what_am_i()
-        print("I am a Rectangle.")
-
-
 class Square(Shape):
+    square_list = []
+
     def __init__(self, s1):
         self.s1 = s1
+        self.square_list.append(self)
 
     def calculate_perimeter(self):
         return self.s1 * 4
@@ -28,8 +18,7 @@ class Square(Shape):
         print("I am a Square.")
 
 
-a_rectangle = Rectangle(20, 50)
 a_square = Square(29)
-
-a_rectangle.what_am_i()
-a_square.what_am_i()
+print(Square.square_list)
+another_square = Square(93)
+print(Square.square_list)
