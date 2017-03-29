@@ -1,2 +1,0 @@
-Follow the instructions here to setup your
-virtual machine:http://askubuntu.com/questions/142549/how-to-install-ubuntu-on-virtualbox
