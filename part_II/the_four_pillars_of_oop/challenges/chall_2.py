@@ -6,7 +6,7 @@ class Square():
         return self.s1 * 4
 
     def change_size(self, new_size):
-        self.s1 = new_size
+        self.s1 += new_size
 
 a_square = Square(100)
 print(a_square.s1)
