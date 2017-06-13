@@ -24,7 +24,8 @@ stack = Stack()
 for item in list1:
     stack.push(item)
 
-for item in stack.items:
-    list2.append(item)
+
+for i in range(len(stack.items)):
+    list2.append(stack.pop())
 
 print(list2)
