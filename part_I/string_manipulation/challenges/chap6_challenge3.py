@@ -1,2 +1,3 @@
-x = "aldous huxley was born in 1894. he was born in the United Kingdom.".title()
-print(x)
+aldus = "aldous Huxley was born in 1894."
+aldus = aldus[0].upper() + aldus[1:]
+print(aldus)
