@@ -1,29 +1,60 @@
+# IMPORTANT. I changed the way this example works
+# so it will fit on smaller devices. Old versions of the book have
+# a different example. If you have an older
+# version of the book, you can email me at cory@theselftaughtprogrammer.io 
+# and I will send you the newest version. Thank you so much for purchasing 
+# my book!
+
+import random
+
 
 def hangman(word):
-    wrong_guesses = 0
-    stages = ["", "________      ", "|      |      ", "|      0      ", "|     /|\     ", "|     / \     ", "|"]
-    remaining_letters = list(word)
-    letter_board = ["__"] * len(word)
+    wrong = 0
+    stages = ["",
+              "__________      ",
+              "|        |      ",
+              "|        |      ",
+              "|        0      ",
+              "|       /|\     ",
+              "|       / \     ",
+              "|               "
+              ]
+    rletters = list(word)
+    guess = []
+    board = ["__"] * len(word)
     win = False
-    print('Welcome to Hangman')
-    while wrong_guesses < len(stages) - 1:
-        print('\n')
-        guess = input("Guess a letter")
-        if guess in remaining_letters:
-            character_index = remaining_letters.index(guess)
-            letter_board[character_index] = guess
-            remaining_letters[character_index] = '$'
+    print("Welcome to Hangman")
+    while wrong < len(stages) - 1:
+        print("\n")
+        msg = "Guess a letter: "
+        char = ""
+        while len(char) is not 1:
+            char = input(msg)
+        guess.append(char)
+        if char in rletters:
+            while char in rletters:
+                cind = rletters \
+                    .index(char)
+                board[cind] = char
+                rletters[cind] = '$'
         else:
-            wrong_guesses += 1
-        print((' '.join(letter_board)))
-        print('\n'.join(stages[0: wrong_guesses + 1]))
-        if '__' not in letter_board:
-            print('You win! The word was:')
-            print(' '.join(letter_board))
+            wrong += 1
+        print((" ".join(board)))
+        print("you've already guessed:")
+        print(guess)
+        e = wrong + 1
+        print("\n"
+              .join(stages[0: e]))
+        if "__" not in board:
+            print("You win!")
+            print(" ".join(board))
             win = True
             break
     if not win:
-        print('\n'.join(stages[0: wrong_guesses]))
-        print('You lose! The words was {}'.format(word))
+        print("\n"
+              .join(stages[0:
+                    wrong]))
+        print("You lose! It was {}."
+              .format(word))
 
 hangman("cat")
