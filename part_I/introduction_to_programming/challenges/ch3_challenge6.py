@@ -1,7 +1,9 @@
-age = 64
-retirement = age - 65
+age = 65
+retirement = 65 - age
 
-if retirement < 10:
+if retirement < 10 and retirement >0:
     print("You get to retire soon.")
-else:
+elif retirement >=10:
     print("You have a long time until you can retire!")
+else:
+    print ("Enjoy your retirement!")
