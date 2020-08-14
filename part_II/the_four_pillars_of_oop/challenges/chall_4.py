@@ -1,14 +1,15 @@
-class Horse():
+class Rider():
     def __init__(self, name):
         self.name = name
 
 
-class Rider():
-    def __init__(self, name, horse):
+class Horse():
+    def __init__(self, name, rider):
         self.name = name
-        self.horse = horse
+        self.rider = rider
 
-harry_the_horse = Horse("Harry")
-the_rider = Rider("Sally", harry_the_horse)
+the_rider = Rider("Sally")
+harry_the_horse = Horse("Harry", the_rider)
 
-print(the_rider.horse.name)
+print("The name of Horse is {}".format(harry_the_horse.name))
+print("The name of Rider is {}".format(harry_the_horse.rider.name))
