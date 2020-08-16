@@ -1,2 +1,2 @@
-x = "aldous huxley was born in 1894. he was born in the United Kingdom.".title()
+x = "aldous Huxley was born in 1894.".capitalize()
 print(x)
