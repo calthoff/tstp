@@ -4,7 +4,7 @@ list3 = []
 
 for i in list1:
     for j in list2:
-        mult = i * j
+#        mult = i * j       # This line can be redundant
         list3.append(i * j)
 
 print(list3)
