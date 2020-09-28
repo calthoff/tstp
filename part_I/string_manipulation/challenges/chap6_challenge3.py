@@ -1,2 +1,5 @@
-x = "aldous huxley was born in 1894. he was born in the United Kingdom.".title()
-print(x)
+string = "aldous Huxley was born in 1894."
+string = string.split(" ")
+string[0] = string[0].capitalize()
+string = " ".join(string)
+print(string)
