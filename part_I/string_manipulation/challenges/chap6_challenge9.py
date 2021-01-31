@@ -1,5 +1,5 @@
-concat = "three" + "three" + "three"
-mult = "three" * 3
+concat = "three" + " three" + " three"
+mult = "three " * 3
 
 print(concat)
-print(mult)
+print(mult.strip())
